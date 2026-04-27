@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Hafsa Shaikh</title>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #e91e63;
+            --dark-text: #1a1a1a;
+            --light-text: #555;
+            --bg-color: #f9f9f9;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        /* Section Header */
+        .section-tag {
+            color: var(--primary-pink);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0 0 30px 0;
+        }
+
+        .section-title span {
+            color: var(--primary-pink);
+        }
+
+        /* Description Text */
+        .about-description {
+            max-width: 800px;
+            font-size: 1.05rem;
+            color: var(--light-text);
+            margin-bottom: 60px;
+            font-weight: 300;
+        }
+
+        /* Cards Grid */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+        }
+
+        /* Icons - Simplified representation */
+        .icon {
+            font-size: 2rem;
+            color: var(--primary-pink);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--dark-text);
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: var(--light-text);
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="container">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I <span>Am</span></h2>
+        
+        <p class="about-description">
+            I am a motivated B.Tech student with a strong interest in Artificial Intelligence and Data 
+            Science. I am passionate about problem-solving, programming, and continuously improving 
+            my technical skills. My goal is to build innovative solutions using technology while 
+            strengthening my core engineering knowledge.
+        </p>
+
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="icon">✨</div>
+                <h3 class="card-title">Passionate Learner</h3>
+                <p class="card-text">Continuously exploring new technologies and methodologies in AI & Data Science.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="icon">◎</div>
+                <h3 class="card-title">Problem Solver</h3>
+                <p class="card-text">Driven by the challenge of turning complex problems into elegant solutions.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="icon">&lt;/&gt;</div>
+                <h3 class="card-title">Tech Enthusiast</h3>
+                <p class="card-text">Proficient in multiple programming languages with a strong engineering foundation.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

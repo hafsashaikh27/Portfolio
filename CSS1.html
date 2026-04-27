@@ -1,0 +1,145 @@
+/* --- GLOBAL STYLES & FONTS --- */
+@import url('https://fonts.googleapis.com');
+
+:root {
+    --primary-pink: #e91e63;
+    --dark-text: #1a1a1a;
+    --light-text: #666;
+    --bg-white: #ffffff;
+    --bg-light: #f8f9fa;
+    --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- NAVIGATION --- */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--light-text);
+    margin-left: 35px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--primary-pink);
+}
+
+/* --- SECTION HEADERS --- */
+.section-tag {
+    color: var(--primary-pink);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.pink-span {
+    color: var(--primary-pink);
+}
+
+/* --- CARDS & BUTTONS --- */
+.card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid #eee;
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.btn {
+    padding: 14px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.btn-pink {
+    background: var(--primary-pink);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.2);
+}
+
+.btn-pink:hover {
+    transform: translateY(-3px);
+    background: #d81b60;
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.4);
+}
+
+.btn-outline {
+    border: 1px solid #ddd;
+    color: var(--light-text);
+}
+
+/* --- ANIMATIONS --- */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+.scroll-arrow {
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--dark-text);
+    display: inline-block;
+}
+
+/* --- GRID BACKGROUND TEXTURE --- */
+.grid-bg {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
